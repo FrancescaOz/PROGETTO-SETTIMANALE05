@@ -1,0 +1,130 @@
+@import "_mixin";
+@import "_variables"; //nota: i colori custom sono stati aggiornati direttamente nel file copia variables
+
+//HEADER//
+
+nav {
+    background-color: $indigo;
+    
+    .navbar-brand {
+        color: $white;
+    }
+
+    .nav-link {
+        color: $red;
+
+        &:hover {
+            color: lighten($white, $amount: 20%);
+        }
+    }
+    .navbar-toggler {
+        border-color: $red; 
+        color: $red;  
+    }
+  
+}
+
+//MAIN//
+//---------HOME--------//
+#containerTitolo {
+    background-image: url('../img/pexels-aleksandar-pasaric-325185.jpg');
+    background-color: $gray;
+    background-position-y: 35%;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+#titolo {
+    
+    margin-left: 1.5rem;
+
+    h1 {
+        font-size: 2.8em;
+        @include titoli;
+        padding-top: 25px
+    }
+
+    p {
+        line-height: $line-height-base;
+        margin-top: 1em;
+
+    }
+
+    button {
+        background-color: $indigo;
+        color: $white;
+        border: 1px solid $indigo;
+        border-radius: 4px;
+        padding: 8px;
+
+        &:hover {
+            background-color: lighten($indigo, $amount: 10%);
+        }
+    }
+}
+//---------LOREM/SERVIZI--------//
+
+#servizi {
+    background-color: $gray;
+
+    .container {
+        padding-top: 1.5em;
+    }
+
+    h3 {
+        @include titoli;
+    }
+}
+
+//----------PARTNERSHIP-----------//
+.row {
+    text-align: center;
+
+    h2 {
+        @include titoli;
+        padding-bottom: 1em;
+    }
+
+    div img {
+        width: 140px;
+        padding-bottom: 1.2em;
+        
+    }
+}
+
+//---------CAROUSEL------------//
+.carouselImg {
+    width: 100px;
+}
+
+.nomeCliente {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.lorem-icon {
+    font-size: 40px;
+}
+
+.quote-icon {
+    color: $red;
+    font-size: 32px;
+}
+
+//---------FOOTER--------//
+
+footer {
+    background-color: $indigo;
+    color: $white;
+   div {
+    padding-top: 1em;
+   }
+   #BootPro {
+    padding-top: 1.4em;
+   }
+
+   h3 {
+    @include titoli;
+    font-size: $font-size-base * 1.75;
+   }
+}
