@@ -11009,6 +11009,10 @@ nav .navbar-toggler {
   width: 100px;
 }
 
+h2, .h2 {
+  font-weight: 300;
+}
+
 .nomeCliente {
   font-weight: 600;
   font-size: 24px;
